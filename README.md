@@ -85,7 +85,7 @@ To run this project locally, follow these steps:
 
 3. Once inside the project directory, you can open the project files using a text editor or an integrated development environment (IDE) of your choice. You can explore and modify the code as needed.
 
-4. o view the website locally on your machine, you can simply open the index.html file in a web browser. You can do this by double-clicking on the index.html file or by right-clicking and selecting "Open with" and then choosing your preferred web browser.
+4. To view the website locally on your machine, you can simply open the index.html file in a web browser. You can do this by double-clicking on the index.html file or by right-clicking and selecting "Open with" and then choosing your preferred web browser.
 
 
 ## Contributions
