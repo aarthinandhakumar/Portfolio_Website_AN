@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="https://kit.fontawesome.com/b174f264dc.js" crossorigin="anonymous"></script>
+    <style>
+        /* CSS styles for main section and gallery container */
+    main {
+    color: beige;
+    background-color: black;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px 50px;
+    gap: 20px;
+    }
+
+.gallery-container {
+    color: beige;
+    background-color: black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+/* CSS styles for food and animal images */
+.food-images, .animal-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.food-images img, .animal-images img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+ /* CSS styles for figure and caption */
+.food-images div, .animal-images div {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ margin: 10px;
+ }
+
+.food-images figure, .animal-images figure {
+ margin-top: 20px; 
+ text-align: center;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <a href ="Home.html" target="_self"><img src = "images/Logo.PNG" id = "logo" alt="logo"></a>
+        <div class="language">
+         <h5>Select a language</h5>
+        <select class="language-selector" id="languageSelector" onchange="changeLanguage()">
+         <option value="en">English</option>
+         <option value="es">Spanish</option>
+     </select>
+     </div>
+        <div class="cookie-popup" id="cookiePopup">
+           <p>We use cookies to improve your experience. By using our site, you accept our <a href="#" style="color: #4CAF50;">cookie policy</a>.</p>
+           <button class="accept" onclick="acceptCookies()">Accept</button>
+           <button class="decline" onclick="declineCookies()">Decline</button>
+        </div>
+       <nav>
+         <ul>
+           <li><a href="About.html" target="_blank"> About</a></li>
+           <li><a href="Projects.html" target="_blank">Projects</a></li>
+           <li><a href="Gallery.html" target="_blank">Gallery</a></li>
+           <li><a href="Blogs.html" target="_blank">Blogs</a></li>
+           <li><a href="Contact.html" target="_blank">Contact</a></li>
+         </ul>
+       </nav>
+       </header>
+    <main><!-- Main content section -->
+        <h1>Happiness through my lens</h1>
+        <div class="gallery-container"><!-- Gallery container -->
+            <div class="food-images"><!-- Food images section -->
+                <div>
+                    <figure>
+                    <figcaption><b>Guilty Pleasure</b></figcaption>
+                    <img src="images/guilty_pleasure.jpg" alt="macaroons">
+                </figure>
+            </div>
+                <div>
+                    <figure>
+                    <figcaption><b>Simple Mornings</b></figcaption>
+                    <img src="images/Simple_Mornings.jpg" alt="bread and sunny sideup">
+                    </figure>
+                </div>
+                <div>
+                    <figure>
+                    <figcaption><b>How much chocolate is too much chocolate?</b></figcaption>
+                    <img src="images/Intense.jpg" alt="choco cake">
+                    </figure>
+                </div>
+                <div>
+                    <figure>
+                    <figcaption><b>Say Cheese.....</b></figcaption>
+                    <img src="images/Say_Cheese.jpg" alt="more and more cheese">
+                    </figure>
+                </div>
+                <div>
+                    <figure>
+                    <figcaption><b>Hug in a mug</b></figcaption>
+                   <img src="images/Art_in_a_mug.jpg" alt="coffee art">
+                    </figure>
+                </div>
+            </div>
+            <div class="animal-images"><!-- Animal images section -->
+                <div>
+                    <figure>
+                    <figcaption><b>Peekabooooo!!!</b></figcaption>
+                    <img src="images/peekaboo.jpg" alt="peekaboo">
+                    </figure>
+                </div>
+                <div>
+                    <figure>
+                    <figcaption><b>I will be watching you!!!</b></figcaption>
+                    <img src="images/cuteness_personified.jpg" alt="racoon">
+                    </figure>
+                </div>
+                <div>
+                    <figure>
+                    <figcaption><b>The eyes, Chico, they never lie</b></figcaption>
+                    <img src="images/soft_eyes.jpg" alt="soft_eyes">
+                    </figure>
+                </div>
+                <div>
+                    <figure>
+                    <figcaption><b>Live, love, laugh</b></figcaption>
+                    <img src="images/Live_love_laugh.jpg" alt="smiling dog">
+                    </figure>
+                </div>
+                <div>
+                    <figure>
+                    <figcaption><b>Like father, like son</b></figcaption>
+                    <img src="images/Father_son.jpg" alt="Father_son">
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="social-links">
+            <a href="mailto:aarthisa@bu.edu" target="_blank"><i class="fa fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <a href="https://x.com/" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
+            <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+            <div class="copyright">
+            <p>&copy; 2024 Aarthi Nandhakumar. All rights reserved.</p>
+          </div>
+          <div class="footer-right">
+          <button type="button" onclick="displayDateTime()">Get Date & Time</button>
+          <p id ='dateTime'></p>
+          </div>
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+          if (!getCookie("cookiesAccepted")) {
+              document.getElementById("cookiePopup").style.display = "block";
+          }
+      });
+    
+      function acceptCookies() {
+          setCookie("cookiesAccepted", "true", 365);
+          document.getElementById("cookiePopup").style.display = "none";
+      }
+    
+      function declineCookies() {
+          setCookie("cookiesAccepted", "false", 365);
+          document.getElementById("cookiePopup").style.display = "none";
+      }
+    
+      function setCookie(name, value, days) {
+          var expires = "";
+          if (days) {
+              var date = new Date();
+              date.setTime(date.getTime() + (days*24*60*60*1000));
+              expires = "; expires=" + date.toUTCString();
+          }
+          document.cookie = name + "=" + (value || "")  + expires + "; path=/";
+          console.log("Cookie set: " + document.cookie);
+      }
+    
+      function getCookie(name) {
+          var nameEQ = name + "=";
+          var ca = document.cookie.split(';');
+          for(var i=0;i < ca.length;i++) {
+              var c = ca[i];
+              while (c.charAt(0) == ' ') c = c.substring(1,c.length);
+              if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+          }
+          return null;
+      }
+      function displayDateTime() {
+              const dateTimeElement = document.getElementById('dateTime');
+              if (dateTimeElement.innerHTML === "") {
+                  const now = new Date();
+                  dateTimeElement.innerHTML = now.toString();
+              } else {
+                  dateTimeElement.innerHTML = "";
+              }
+          }
+    </script>
+    </body>
+    </html>

@@ -1,0 +1,186 @@
+/* Resetting default margin and box-sizing */
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+/* Styling for the cookie popup */
+.cookie-popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: small;
+    transform: translate(-50%, -40%); 
+    background-color: #333;
+    color: white;
+    padding: 5px;
+    padding-right: 5px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    width: 700px;
+    text-align: center;
+    display: none; 
+}
+/* Styling for buttons within cookie popup */
+.cookie-popup button {
+    margin: 5px;
+    padding: 2px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.cookie-popup .accept {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.cookie-popup .decline {
+    background-color: #f44336;
+    color: white;
+}
+/* Body styling */
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden; 
+}
+/* Logo styling */
+#logo {
+    width: 150px;
+    height: auto;
+}
+.language {
+    display: flex;
+    align-items: center;
+    margin-right: 120px;
+}
+
+.language h5 {
+    margin-right: 10px;
+}
+/* Language selector styling */
+.language-selector {
+            padding: 5px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            color: #333;
+            font-size: 14px;
+            margin-right: 520px;
+            position: relative;
+            z-index: 2; 
+            }
+/* Header styling */
+header {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+/* Navigation menu styling */
+nav ul {
+    padding: 20px;
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+nav a {
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+nav a:visited {
+    color: violet;
+}
+nav a:hover {
+    color: yellow;
+}
+nav a:active {
+    color:red;
+}
+/* Main content area styling */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+    flex: 1;
+    width: 100%;
+    box-sizing: border-box;
+}
+/* Footer styling */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+/* Styling for social media links */
+.social-links {
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-links a:visited {
+   color: violet;
+}
+
+.social-links a:hover {
+   color: orange;
+}
+.social-links a:active {
+    color: red;
+ }
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+}
+.footer-right button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #444;
+    color: white;
+    cursor: pointer;
+}
+.footer-right button:hover {
+    background-color: #555;
+}
+/* Media query for smaller screens - header */
+@media only screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+/* Adjusted navigation menu for smaller screens */
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+/* Media query for smaller screens - main content area */
+@media only screen and (max-width: 768px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+}
