@@ -168,6 +168,40 @@
           </div>
     </footer>
     <script>
+        function setLanguage(language) {
+        localStorage.setItem("selectedLanguage", language);
+    }
+
+    // Function to get the selected language from localStorage
+    function getLanguage() {
+        return localStorage.getItem("selectedLanguage");
+    }
+
+    // Function to change the language
+    function changeLanguage() {
+        var languageSelector = document.getElementById("languageSelector");
+        var selectedLanguage = languageSelector.options[languageSelector.selectedIndex].value;
+        setLanguage(selectedLanguage);
+    }
+
+    // Function to set the selected language in the language selector
+    function setSelectedLanguage() {
+        var selectedLanguage = getLanguage();
+        if (selectedLanguage) {
+            var languageSelector = document.getElementById("languageSelector");
+            for (var i = 0; i < languageSelector.options.length; i++) {
+                if (languageSelector.options[i].value == selectedLanguage) {
+                    languageSelector.selectedIndex = i;
+                    break;
+                }
+            }
+        }
+    }
+
+    // Call setSelectedLanguage when the DOM content is loaded
+    document.addEventListener("DOMContentLoaded", function() {
+        setSelectedLanguage();
+    });
       document.addEventListener("DOMContentLoaded", function() {
           if (!getCookie("cookiesAccepted")) {
               document.getElementById("cookiePopup").style.display = "block";
