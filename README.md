@@ -8,7 +8,7 @@ I have designed this portfolio website to demonstrate my mastery of various web 
 
 The website consists of the following main files which also function through external files listed below:
 
- Home.html
+ index.html
  About.html
  Projects.html
  Gallery.html
@@ -23,21 +23,25 @@ The website consists of the following main files which also function through ext
 
  images folder
 
+ ReadME.md
+
+ License.txt
+
 ## Technologies Used
 
- HTML5
- CSS3
- JavaScript
- JSON
- Node.js
- Git
- GitHub
+ 1.HTML5
+ 2.CSS3
+ 3.JavaScript
+ 4.JSON
+ 5.Node.js
+ 6.Git
+ 7.GitHub
 
 
 ## Features
 
 1. **Home**
-   - The home page includes a logo, a language selector,  navigation links in the header, a video background, links to social media, date & time display at the footer. The heater and footer features are replicated in most other pages to enhance easy navigation and usability.
+   - The home page(index) includes a logo, a language selector,  navigation links in the header, a video background, links to social media, date & time display at the footer. The heater and footer features are replicated in most other pages to enhance easy navigation and usability.
 
 2. **About**
    - The About page has an introduction about me and my work, with a link to my Resume, where you can know more about my experience.
@@ -73,13 +77,15 @@ To run this project locally, follow these steps:
 
 1. Clone the repository:
    
-   git clone https://github.com/your-username/portfolio-website.git
+   git clone https://github.com/aarthisan/Portfolio_Website_AN.git
 
 2. Navigate to the project directory:
   
-  Use the command: cd portfolio-website
+  Use the command: cd Portfolio_Website_AN
 
-3. Open index.html in your preferred web browser.
+3. Once inside the project directory, you can open the project files using a text editor or an integrated development environment (IDE) of your choice. You can explore and modify the code as needed.
+
+4. o view the website locally on your machine, you can simply open the index.html file in a web browser. You can do this by double-clicking on the index.html file or by right-clicking and selecting "Open with" and then choosing your preferred web browser.
 
 
 ## Contributions
