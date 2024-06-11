@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="https://kit.fontawesome.com/b174f264dc.js" crossorigin="anonymous"></script>
+    <style>
+    main {
+    background-color: darkseagreen;
+    color: black;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px; /* Add some padding to the main section */
+    position: relative; /* Relative positioning for the main section */
+}
+
+#links {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+    margin-left: 80px;
+    margin-top: 10px;
+    margin-right: 80px;
+}
+
+#link1, #link2 {
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: underline;
+    display: flex;
+    width: 200px;
+    height: 50px;
+}
+
+form {/* Styling for form */
+    background-color: rgb(225, 162, 59);
+    color: blanchedalmond;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    height: 600px;
+    padding: 20px;
+    margin-top: 20px;
+    align-self: center; /* Center the form vertically */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"] {
+    margin-top: 2px;
+    margin-bottom: 5px;
+    width: 100%; /* Make input fields take full width */
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.error {
+    color: brown;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+textarea {
+    margin-top: 8px;
+    margin-bottom: 15px;
+    padding: 5px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    width: 100%; /* Make textarea take full width */
+}
+
+#submitBtn {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: large;
+    width: 100%;
+}
+
+#submitBtn:hover {
+    background-color: yellow;
+    cursor: pointer;
+}
+
+aside#contacts {
+    background-color: darkseagreen;
+    padding: 5px;
+    max-width: 400px;
+    position: absolute; /* Positioning aside absolutely within the main section */
+    right: 20px; /* Move aside to the right */
+    top: 20px; /* Move aside a bit upwards */
+}
+
+aside#contacts h5 {
+    margin-top: 0;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+aside#contacts p {
+    color: #444;
+    margin-bottom: 5px;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <a href ="Home.html" target="_self"><img src = "images/Logo.PNG" id = "logo" alt="logo"></a>
+        <div class="language">
+         <h5>Select a language</h5>
+        <select class="language-selector" id="languageSelector" onchange="changeLanguage()">
+         <option value="en">English</option>
+         <option value="es">Spanish</option>
+     </select>
+     </div>
+       <nav>
+         <ul>
+           <li><a href="About.html" target="_blank"> About</a></li>
+           <li><a href="Projects.html" target="_blank">Projects</a></li>
+           <li><a href="Gallery.html" target="_blank">Gallery</a></li>
+           <li><a href="Blogs.html" target="_blank">Blogs</a></li>
+           <li><a href="Contact.html" target="_blank">Contact</a></li>
+         </ul>
+       </nav>
+       </header>
+   <main>
+    <section>
+  <h1 id="t1">Have a Project plan or a question?</h1>
+  <h2 id="t2"> Why wait? Go ahead and submit your query</h2>
+  <form id="contactform"><!-- Contact Form -->
+    <div>
+        <label for="name">Name</label> 
+        <input type="text" id="name" name="name"> 
+        <div id="nameError" class="error"></div>
+    </div>
+    <div>
+        <label for="number">Phone Number</label> 
+        <input type="text" id="number" name="number"> 
+        <div id="numberError" class="error"></div>
+    </div>
+    <div>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email">
+      <div id="emailError" class="error"></div>
+  </div>
+    <div>
+    <label for = "message">Message</label>
+<textarea id="message" name="message" style="width:350px; height:220px;"></textarea>
+</div>
+<div>
+<label for="myfile">Upload a file:</label>
+  <input type="file" id="myfile" name="myfile">
+</div>
+    <div>
+        <button type="button" id="submitBtn">Submit</button>
+    </div>
+</form>
+<div id="summary" style="display: none; font-weight: bold; font-size: 150%; padding: 150px;"></div>
+<div id="links">
+<a href = "Contact.html" id = "link1" target="_self" style="display: none;">Submit another query</a>
+<a href = "Home.html" id = "link2" target="_self" style="display: none;">Go to Home page</a>
+</div>
+</section><!-- Contact Details Sidebar -->
+<aside id="contacts">
+    <h4>Phone Number</h4>
+    <p id="phoneNumber"></p>
+    <h4>Email Address</h4>
+    <p id="emailAddress"></p>
+    <h4>Business Hours</h4>
+    <p id="businessHours"></p>
+    <h4>Location</h4>
+    <p id="location"></p>
+</aside>
+</main>
+<footer>
+    <div class="social-links">
+        <a href="mailto:aarthisa@bu.edu" target="_blank"><i class="fa fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a>
+        <a href="https://x.com/" target="_blank"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
+        <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+        <div class="copyright">
+        <p>&copy; 2024 Aarthi Nandhakumar. All rights reserved.</p>
+      </div>
+      <div class="footer-right">
+      <button type="button" onclick="displayDateTime()">Get Date & Time</button>
+      <p id ='dateTime'></p>
+      </div>
+</footer>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+
+        // Fetch and display JSON data
+        fetch('Contacts.json')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok ' + response.statusText);
+                }
+                return response.json();
+            })
+            .then(data => {
+                console.log(data); 
+                document.getElementById('phoneNumber').textContent = data.Contacts.phoneNumber;
+                document.getElementById('emailAddress').textContent = data.Contacts.emailAddress;
+                document.getElementById('businessHours').textContent = data.Contacts.businessHours;
+                document.getElementById('location').textContent = data.Contacts.location;
+            })
+            .catch(error => {
+                console.error('There was a problem with the fetch operation:', error);
+            });
+    });       
+    function displayDateTime() {
+        const dateTimeElement = document.getElementById('dateTime');
+        if (dateTimeElement.innerHTML === "") {
+            const now = new Date();
+            dateTimeElement.innerHTML = now.toString();
+        } else {
+            dateTimeElement.innerHTML = "";
+        }
+    }
+</script>
+<script src="contact.JS"></script><!-- External JavaScript file -->
+</body>
+</html>
