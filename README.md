@@ -8,12 +8,12 @@ I have designed this portfolio website to demonstrate my mastery of various web 
 
 The website consists of the following main files which also function through external files listed below:
 
- index.html
- About.html
- Projects.html
- Gallery.html
- Blogs.html 
- Contact.html
+ 1. index.html
+ 2. About.html
+ 3. Projects.html
+ 4. Gallery.html
+ 5. Blogs.html 
+ 6. Contact.html
 
  Style.css
 
@@ -29,13 +29,13 @@ The website consists of the following main files which also function through ext
 
 ## Technologies Used
 
- 1.HTML5
- 2.CSS3
- 3.JavaScript
- 4.JSON
- 5.Node.js
- 6.Git
- 7.GitHub
+ 1. HTML5
+ 2. CSS3
+ 3. JavaScript
+ 4. JSON
+ 5. Node.js
+ 6. Git
+ 7. GitHub
 
 
 ## Features
@@ -68,7 +68,7 @@ The website consists of the following main files which also function through ext
    - I have a list of my social media links at the bottom of the page, where i function apart from my official website.
 
 10. **Responsive Design**
-   - The website uses CSS Flexbox and Grid Layout to ensure it is responsive and looks great on all devices.
+     - The website uses CSS Flexbox and Grid Layout to ensure it is responsive and looks great on all devices.
   
 
 ## Setup and Installation
@@ -81,7 +81,7 @@ To run this project locally, follow these steps:
 
 2. Navigate to the project directory:
   
-  Use the command: cd Portfolio_Website_AN
+     Use the command: cd Portfolio_Website_AN
 
 3. Once inside the project directory, you can open the project files using a text editor or an integrated development environment (IDE) of your choice. You can explore and modify the code as needed.
 
