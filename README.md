@@ -101,4 +101,3 @@ If you would like to contribute to this project, please fork the repository and 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](License.txt) file for details.
->>>>>>> efe71959321e57912c9d8daa2e6d8e5cf4c46dd0
