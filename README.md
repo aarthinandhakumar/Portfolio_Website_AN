@@ -87,7 +87,7 @@ To run this project locally, follow these steps:
 
 4. To view the website locally on your machine, you can simply open the index.html file in a web browser. You can do this by double-clicking on the index.html file or by right-clicking and selecting "Open with" and then choosing your preferred web browser.
 
-5. Direct link https://aarthisan.github.io/Portfolio_Website_AN/
+5. Direct link https://aarthinandhakumar.github.io/Portfolio_Website_AN/
 
 
 ## Contributions
