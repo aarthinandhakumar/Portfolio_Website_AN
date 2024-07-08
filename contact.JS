@@ -14,7 +14,7 @@ const validateForm = () => {
         errorElement.textContent = '';
 // Validate each field based on its ID
         if (field === 'name') {
-            if (value.length < 2 || !/^[A-Za-z]+$/.test(value)) {
+            if (value.length < 2 || !/^[A-Z a-z]+$/.test(value)) {
                 errorElement.textContent = `Name must contain at least 2 alpha characters.`;
                 isValid = false; 
             }
