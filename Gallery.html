@@ -163,7 +163,7 @@
             <p>&copy; 2024 Aarthi Nandhakumar. All rights reserved.</p>
           </div>
           <div class="footer-right">
-          <button type="button" onclick="displayDateTime()">Get Date & Time</button>
+            <button type="button" onclick="document.getElementById('dateTime').innerHTML=Date()">Get Date & Time</button>
           <p id ='dateTime'></p>
           </div>
     </footer>
@@ -239,15 +239,6 @@
           }
           return null;
       }
-      function displayDateTime() {
-              const dateTimeElement = document.getElementById('dateTime');
-              if (dateTimeElement.innerHTML === "") {
-                  const now = new Date();
-                  dateTimeElement.innerHTML = now.toString();
-              } else {
-                  dateTimeElement.innerHTML = "";
-              }
-          }
     </script>
     </body>
     </html>

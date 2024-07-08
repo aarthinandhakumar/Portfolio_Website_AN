@@ -174,13 +174,13 @@ aside#contacts p {
 </div>
 </section><!-- Contact Details Sidebar -->
 <aside id="contacts">
-    <h4>Phone Number</h4>
+    <h4>&#128222 Phone Number</h4>
     <p id="phoneNumber"></p>
-    <h4>Email Address</h4>
+    <h4>&#128231 Email Address</h4>
     <p id="emailAddress"></p>
-    <h4>Business Hours</h4>
+    <h4>&#128336 Business Hours</h4>
     <p id="businessHours"></p>
-    <h4>Location</h4>
+    <h4>&#127970 Location</h4>
     <p id="location"></p>
 </aside>
 </main>
@@ -196,7 +196,7 @@ aside#contacts p {
         <p>&copy; 2024 Aarthi Nandhakumar. All rights reserved.</p>
       </div>
       <div class="footer-right">
-      <button type="button" onclick="displayDateTime()">Get Date & Time</button>
+        <button type="button" onclick="document.getElementById('dateTime').innerHTML=Date()">Get Date & Time</button>
       <p id ='dateTime'></p>
       </div>
 </footer>
@@ -257,15 +257,6 @@ aside#contacts p {
                 console.error('There was a problem with the fetch operation:', error);
             });
     });       
-    function displayDateTime() {
-        const dateTimeElement = document.getElementById('dateTime');
-        if (dateTimeElement.innerHTML === "") {
-            const now = new Date();
-            dateTimeElement.innerHTML = now.toString();
-        } else {
-            dateTimeElement.innerHTML = "";
-        }
-    }
 </script>
 <script src="contact.JS"></script><!-- External JavaScript file -->
 </body>

@@ -39,7 +39,7 @@ const validateForm = () => {
 const displaySummary = () => {
     const Name = document.getElementById('name').value.trim();
     const summary = document.getElementById('summary');
-    summary.innerHTML  = `Thank you, ${Name}, for your query! Please allow 2-3 business days to get back to you.`;
+    summary.innerHTML  = `Thank you, ${Name}, for your query! Please allow 4-5 &#128197 days to get back to you.`;
     summary.style.display = 'block';
     t1.style.display='none';
     t2.style.display='none';
