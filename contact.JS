@@ -42,7 +42,6 @@ const displaySummary = () => {
     summary.innerHTML  = `Thank you, ${Name}, for your query! Please allow 4-5 &#128197 days to get back to you.`;
     summary.style.display = 'block';
     t1.style.display='none';
-    t2.style.display='none';
     link1.style.display='block';
     link2.style.display='block';
     document.getElementById('contactform').style.display='none';
