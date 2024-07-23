@@ -113,6 +113,12 @@ aside#contacts p {
     margin-bottom: 5px;
 }
 
+#bulbimg {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
     </style>
 </head>
 <body>
@@ -136,9 +142,12 @@ aside#contacts p {
        </nav>
        </header>
    <main>
+    <div id= "bulbimg">
+        <img id="bulb" onclick="lights()" src="images/bulboff.jpg" width="150" height="200">
+        <h4>Elevating the simple things - click to know more </h4>
+    </div>
     <section>
-  <h1 id="t1">Have a Project plan or a question?</h1>
-  <h2 id="t2"> Why wait? Go ahead and submit your query</h2>
+  <h1 id="t1">Open for ideas and collaborations</h1>
   <form id="contactform"><!-- Contact Form -->
     <div>
         <label for="name">Name</label> 
@@ -187,10 +196,10 @@ aside#contacts p {
 <footer>
     <div class="social-links">
         <a href="mailto:aarthisa@bu.edu" target="_blank"><i class="fa fa-envelope"></i></a>
-        <a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a>
-        <a href="https://x.com/" target="_blank"><i class="fa fa-twitter"></i></a>
-        <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
-        <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/aarthi-n-92250130a/" target="_blank"><i class="fa fa-linkedin"></i></a>
+      <a href="https://x.com/" target="_blank"><i class="fa fa-twitter"></i></a>
+      <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
+      <a href="https://github.com/aarthinandhakumar" target="_blank"><i class="fab fa-github"></i></a>
         </div>
         <div class="copyright">
         <p>&copy; 2024 Aarthi Nandhakumar. All rights reserved.</p>
@@ -230,6 +239,15 @@ aside#contacts p {
             }
         }
     }
+
+    function lights() {
+        var image = document.getElementById('bulb');
+        if (image.src.match("bulbon")) {
+          image.src = "images/bulboff.jpg";
+        } else {
+          image.src = "images/bulbon.jpg";
+        }
+      }
 
     // Call setSelectedLanguage when the DOM content is loaded
     document.addEventListener("DOMContentLoaded", function() {
